@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-const baseURL = "http://localhost:3000";
+const baseURL = "";
 
 export const getIngredients = () => Axios.get(`${baseURL}/ingredients`)
     .then(response => {
