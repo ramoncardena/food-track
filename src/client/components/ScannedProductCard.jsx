@@ -70,7 +70,7 @@ export default function ScannedProductCard({ product, ean }) {
         });
     } else {
       setIsFetching(true);
-      postIngredient(product.product_name, product.brands, ean)
+      postIngredient(product.product_name, product.brands ? product.brands : "", ean)
         .then((res) => {
           setIsFetching(false);
           fetchIngredient(ean);
