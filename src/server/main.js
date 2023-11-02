@@ -226,6 +226,6 @@ app.get("/ingredients/name/:name", async (req, res) => {
 });
 
 
-ViteExpress.listen(app, 3000, () =>
+ViteExpress.listen(app, 443, () =>
   console.log("Server is listening on port 3000...")
 );
